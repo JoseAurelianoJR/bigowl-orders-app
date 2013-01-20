@@ -1,4 +1,10 @@
 OrdersApp::Application.routes.draw do
+  resources :orders
+
+  resources :products
+
+  root :to => 'dispatch#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

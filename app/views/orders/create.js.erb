@@ -1,0 +1,6 @@
+<% publish_to "/orders_new" do %>
+  html = '<li>' + '<%= @order.name %>' + '</li>';
+  $("#orders").append(html);
+<% end %>
+
+document.location = '<%= order_path @order %>'
